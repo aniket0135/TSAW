@@ -1,0 +1,163 @@
+.main-page {
+
+}
+.main-page__gif{
+  background-color: rgba(12, 4, 48, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: -5px;
+    z-index: 100;
+}
+.video-wrap {
+  width: 100%;
+}
+
+.video-wrap::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+}
+.main-page__row {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+transform: translateY(-40%);
+}
+
+.typing{
+    position: relative;
+    left: 7%;
+
+}
+
+.typing h2 {
+  font-size: 50px;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .04em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@media screen and (min-width: 1450px) {
+  .typing h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .typing h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+.make-me{
+  position:relative;
+  left: 12%;
+}
+.make-me .fa-angle-double-down{
+color: Dodgerblue;
+}
+.make-me .fa-angle-double-down:hover{
+cursor: pointer;
+color:white;
+transition: color ease;
+}
+
+.tail-fin-img{
+  height: 190px;
+  width: 350px;
+  background-image: url("../img/tail_fin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.body-img{
+  height: 230px;
+  width: 370px;
+  background-image: url("../img/body.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  margin-top: 0px;
+}
+.nose-img{
+  height: 135px;
+  width: 350px;
+  background-image: url("../img/nose.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.mission-point:before{
+  content: "\f0a4";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: -1%;
+  color: #686e8c;
+}
+.mission-point{
+  padding: 0px 20px 0 20px;
+  position: relative;
+  left: 3%;
+  text-align: justify;
+  font-size: 20px;
+
+}

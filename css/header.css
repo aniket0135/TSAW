@@ -1,0 +1,48 @@
+.header{
+  background: #2062ae; /* Old browsers */
+  background: -moz-linear-gradient(left, #2062ae 90%, #85bfeb 99%, #85bfeb 99%, #85bfeb 100%, #85bfeb 100%, #85bfeb 100%, #85bfeb 100%, #85bfeb 100%, #85bfeb 100%, #85bfeb 100%, #85bfeb 101%, #85bfeb 101%, #85bfeb 101%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #2062ae 90%,#85bfeb 99%,#85bfeb 99%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 101%,#85bfeb 101%,#85bfeb 101%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #2062ae 90%,#85bfeb 99%,#85bfeb 99%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 100%,#85bfeb 101%,#85bfeb 101%,#85bfeb 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2062ae', endColorstr='#85bfeb',GradientType=1 ); /* IE6-9 */
+}
+.nav-item{
+  padding: 0.5rem 1rem;
+  width: auto;
+}
+.navbar-header .nav-link{
+  font-size: 0.95em;
+  color: white;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin: 0px 3px;
+  position: relative;
+  top: 40%;
+  padding: 0;
+}
+.navbar-header .nav-link::after{
+  content: '';
+  background: transparent;
+  width: 0px;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: width .5s ease, background-color .5s ease;
+}
+.navbar-header .nav-link:hover::after {
+  width: 100%;
+  background: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+.main-content{
+  padding-top: 16px;
+  min-height: 700px;
+}
+.sticky + .main-content{
+  padding-top: 116px;
+   /* added for smooth scrolling on section */
+}

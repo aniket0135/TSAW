@@ -1,0 +1,13 @@
+.giphy{
+  /* position: relative; */
+  width: 650px;
+  height: 400px;
+  /* left: 50%;
+  top: 40%;
+  transform: translate(-50%,20%); */
+
+}
+
+.jump1,.jump2,.jump3{
+  color: blue;
+}
